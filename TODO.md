@@ -1,6 +1,7 @@
 ## 19 May
 
 <!-- TODO: -->
+<!-- DONE: -->
 
 1- i have added a Coeffti (pardon my word) Button in the Buton Component so now,
 we have to Create a Button component linking for cli installation shadcn in the backend and
@@ -13,13 +14,13 @@ and Portfolio
 
 Stalk other Component libraries for now and create a unique component which can be usefull and easy to use
 
+#22 May
 
-#22 May 
+<!-- TODO: -->
 
-<!-- TODO: --> 
-add this both components in your code 
+add this both components in your code
 
-1- Create a lizard navbar, 
+1- Create a lizard navbar,
 Create a nav which changes colour whenever my new div enters and that given colour will be provided in the navbar and triggered with Gsap, on user scrolls
 2-
 Create a input button in which whenever user types password the div will be blurred automatically

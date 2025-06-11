@@ -47,8 +47,8 @@ const docsConfig = {
         },
 
         {
-          title: "Navbar",
-          href: "/docs/components/navbar",
+          title: "Magnetic Element",
+          href: "/docs/components/magnetElement",
         },
         {
           title: "Caching",

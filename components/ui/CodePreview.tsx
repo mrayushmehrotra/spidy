@@ -12,7 +12,7 @@ type Props = {
 };
 
 const CodePreview: React.FC<Props> = ({
-  code,
+  code = "",
   preview,
   language = "javascript",
 }) => {

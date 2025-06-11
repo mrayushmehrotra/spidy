@@ -89,39 +89,6 @@ export function MainNav() {
         >
           Docs
         </Link>
-        <Link
-          href="/learn"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/learn")
-              ? "text-foreground"
-              : "text-foreground/60",
-          )}
-        >
-          Learn
-        </Link>
-        <Link
-          href="/templates"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/templates")
-              ? "text-foreground"
-              : "text-foreground/60",
-          )}
-        >
-          Templates
-        </Link>
-        <Link
-          href="/showcase"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/showcase")
-              ? "text-foreground"
-              : "text-foreground/60",
-          )}
-        >
-          Showcase
-        </Link>
       </nav>
     </div>
   );
