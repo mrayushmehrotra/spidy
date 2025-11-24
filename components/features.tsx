@@ -11,36 +11,36 @@ import { Typer } from "./Typer";
 const features = [
   {
     icon: <Globe className="h-10 w-10" />,
-    title: "Hybrid Code",
+    title: "hybrid code",
     description:
-      "Can easily work with any tech stack as long as it uses HTML,CSS,JS",
+      "can easily work with any tech stack as long as it uses html,css,js",
   },
   {
     icon: <Zap className="h-10 w-10" />,
-    title: "Customizable ",
+    title: "customizable ",
 
-    description: "Can easily Customized, it's just simple React",
+    description: "can easily customized, it's just simple react",
   },
   {
     icon: <Database className="h-10 w-10" />,
-    title: "Data Fetching",
-    description: "APIs for dynamic content.",
+    title: "data fetching",
+    description: "apis for dynamic content.",
   },
   {
     icon: <Code className="h-10 w-10" />,
-    title: "Zero Config",
+    title: "zero config",
     description:
-      "Automatic compilation and bundling. Optimized for production.",
+      "automatic compilation and bundling. optimized for production.",
   },
   {
     icon: <Layers className="h-10 w-10" />,
-    title: "File-based Components",
-    description: "Every component in directory  have a unique and easy names.",
+    title: "file-based components",
+    description: "every component in directory  have a unique and easy names.",
   },
   {
     icon: <Check className="h-10 w-10" />,
-    title: "Built-in Optimizations",
-    description: "Used Image tag from Next for Image Optimizations and all.",
+    title: "built-in optimizations",
+    description: "used image tag from next for image optimizations and all.",
   },
 ];
 
@@ -50,10 +50,10 @@ export function Features() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-primary">
-            Ship <Typer />
+            ship <Typer />
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Built on Top of Next for Mainly Next
+            built on top of next for mainly next
           </p>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
             it support's other tech stack too, but you have to it configure a

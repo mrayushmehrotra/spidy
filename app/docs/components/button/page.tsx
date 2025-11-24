@@ -124,7 +124,7 @@ return(
           this is just a{" "}
           <Link
             href="https://ui.shadcn.com/docs/components/button"
-            className="ml-1 mr-1 text-white"
+            className=" text-black  dark:text-white"
           >
             shadcn
           </Link>

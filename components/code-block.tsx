@@ -3,7 +3,8 @@
 import * as React from "react";
 import { Check, Copy } from "lucide-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { oneDark, oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { useTheme } from "next-themes";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,7 @@ export function CodeBlock({
   ...props
 }: CodeBlockProps) {
   const [copied, setCopied] = React.useState(false);
+  const { theme } = useTheme();
 
   const codeString = React.Children.toArray(children)[0]?.toString() ?? "";
 
@@ -51,7 +53,7 @@ export function CodeBlock({
 
       <SyntaxHighlighter
         language={language}
-        style={oneDark}
+        style={theme === "dark" ? oneDark : oneLight}
         customStyle={{
           margin: 0,
           padding: "1.5rem",
@@ -60,7 +62,7 @@ export function CodeBlock({
         codeTagProps={{
           className: "font-mono text-sm",
         }}
-        className={cn("bg-black dark:bg-zinc-950", className)}
+        className={cn("bg-muted dark:bg-zinc-950", className)}
         {...props}
       >
         {codeString}

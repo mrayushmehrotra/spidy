@@ -4,16 +4,9 @@ import { CodeBlock } from "@/components/code-block";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
-export default function InstallationPage() {
+export default function IntroductionPage() {
   const toc = [
-    { id: "system-requirements", text: "System Requirements", level: 2 },
-    { id: "automatic-installation", text: "Automatic Installation", level: 2 },
-    { id: "manual-installation", text: "Manual Installation", level: 2 },
-    {
-      id: "running-the-development-server",
-      text: "Running the Development Server",
-      level: 2,
-    },
+    { id: "design-system-control", text: "design system control", level: 2 },
   ];
 
   return (
@@ -21,56 +14,42 @@ export default function InstallationPage() {
       <div className="max-w-3xl space-y-12">
         <div className="space-y-4">
           <h1 className="scroll-m-20 text-4xl font-bold tracking-tight">
-            Installation
+            introduction
           </h1>
           <p className="text-md text-muted-foreground">
-            sigma/ui is supposed to be a superset of shadcn/ui which is a set of
-            beautifully-designed, accessible components and a code distribution
-            platform. Works with your favorite frameworks and AI models. Open
-            Source. Open Code.
+            sigma ui is a modern component library built as a superset of shadcn/ui, featuring beautifully-designed, accessible components with a revolutionary code distribution approach. compatible with your favorite frameworks and ai models. fully open source.
           </p>
         </div>
 
         <div className="space-y-4">
           <h2
             className="scroll-m-20 text-xl font-semibold tracking-tight"
-            id="system-requirements"
+            id="design-system-control"
           >
-            This is not a component library. It is how you build your component
-            library.
+            build your design system with complete control
           </h2>
           <p>
-            You know how most traditional component libraries work: you install
-            a package from NPM, import the components, and use them in your app.
+            traditional component libraries follow a familiar pattern: install from npm, import components, and use them in your application.
             <br />
             <br />
-            This approach works well until you need to customize a component to
-            fit your design system or require one that isn’t included in the
-            library.{" "}
+            this works perfectly until you need to customize components for your design system or require functionality that doesn't exist in the library.{" "}
             <b>
-              Often, you end up wrapping library components, writing workarounds
-              to override styles, or mixing components from different libraries
-              with incompatible APIs.
+              you end up creating wrapper components, writing complex style overrides, or mixing incompatible libraries with different apis.
             </b>
             <br />
             <br />
-            This is what shadcn/ui aims to solve. It is built around the
-            following principles:
+            sigma ui solves these challenges with a revolutionary approach built on three core principles:
             <ul className="m-2 list-disc ">
               <li className="mb-2">
-                <b>Open Code: </b>The Top layer of your component code is open
-                for modifications
+                <b>open code architecture: </b>complete access to component source code for unlimited customization
               </li>
               <li className="mb-2">
-                <b>Composition: </b>
-                every component uses a common, composable interface, making it
-                easily predicatable
+                <b>composable design: </b>
+                every component follows consistent, predictable patterns for seamless integration
               </li>
               <li>
-                <b>Superset: </b>
-                this is a superset of shadcn/ui which is built on top of shadcn,
-                which mean&apos;s some component might use shadcn behind the
-                scene
+                <b>enhanced foundation: </b>
+                built as a superset of shadcn/ui, providing additional components while maintaining full compatibility
               </li>
             </ul>
           </p>
@@ -78,7 +57,7 @@ export default function InstallationPage() {
         <div className="w-full ">
           <Link href="/docs/installation" className="flex justify-end  ">
             <div className="flex hover:bg-zinc-700 p-2 rounded-md ">
-              Installtion <ChevronRight />
+              installation <ChevronRight />
             </div>
           </Link>
         </div>

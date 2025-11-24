@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { oneDark, oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { useTheme } from "next-themes";
 import { Check, Copy } from "lucide-react";
 import { Button } from "./button";
 import { cn } from "@/lib/utils";
@@ -18,6 +19,7 @@ const CodePreview: React.FC<Props> = ({
 }) => {
   const [activeTab, setActiveTab] = useState<"preview" | "code">("preview");
   const [copied, setCopied] = useState(false);
+  const { theme } = useTheme();
 
   const onCopy = () => {
     navigator.clipboard.writeText(code);
@@ -32,7 +34,7 @@ const CodePreview: React.FC<Props> = ({
           type="button"
           className={cn(
             "cursor-pointer p-2",
-            activeTab === "preview" && "border-b border-white",
+            activeTab === "preview" && "border-b border-foreground",
           )}
           onClick={() => setActiveTab("preview")}
         >
@@ -43,7 +45,7 @@ const CodePreview: React.FC<Props> = ({
           type="button"
           className={cn(
             "cursor-pointer p-2",
-            activeTab === "code" && "border-b border-white",
+            activeTab === "code" && "border-b border-foreground",
           )}
           onClick={() => setActiveTab("code")}
         >
@@ -51,7 +53,7 @@ const CodePreview: React.FC<Props> = ({
         </button>
       </div>
 
-      <div className="border border-zinc-400 rounded-sm min-h-[40vh] p-4 flex items-center justify-center">
+      <div className="border border-border rounded-sm min-h-[40vh] p-4 flex items-center justify-center">
         {activeTab === "preview" ? (
           <div>{preview}</div>
         ) : (
@@ -73,7 +75,7 @@ const CodePreview: React.FC<Props> = ({
             {/*  @ts-ignore */}
             <SyntaxHighlighter
               language={language}
-              style={oneDark} // ⬅ same theme as CodeBlock
+              style={theme === "dark" ? oneDark : oneLight}
               customStyle={{
                 margin: 0,
                 padding: "1.25rem",

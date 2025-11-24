@@ -50,51 +50,43 @@ export function SearchCommand() {
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
+          <CommandGroup heading="Learn">
+            <CommandItem
+              onSelect={() =>
+                runCommand(() => router.push("/docs/installation"))
+              }
+            >
+              installation
+            </CommandItem>
+          </CommandGroup>
+
           <CommandGroup heading="Documentation">
             <CommandItem
               onSelect={() =>
-                runCommand(() => router.push("/docs/getting-started"))
+                runCommand(() => router.push("/docs/installation"))
               }
             >
               Getting Started
             </CommandItem>
             <CommandItem
-              onSelect={() =>
-                runCommand(() => router.push("/docs/app-directory"))
-              }
+              onSelect={() => runCommand(() => router.push("/docs/button"))}
             >
-              App Router
+              Button
+            </CommandItem>
+            <CommandItem
+              onSelect={() => runCommand(() => router.push("/docs/mouse"))}
+            >
+              Mouse
             </CommandItem>
             <CommandItem
               onSelect={() =>
-                runCommand(() => router.push("/docs/pages-directory"))
+                runCommand(() => router.push("/docs/flashy-mouse"))
               }
             >
-              Pages Router
-            </CommandItem>
-            <CommandItem
-              onSelect={() =>
-                runCommand(() => router.push("/docs/api-reference"))
-              }
-            >
-              API Reference
+              Flashy Mouse
             </CommandItem>
           </CommandGroup>
           <CommandSeparator />
-          <CommandGroup heading="Learn">
-            <CommandItem
-              onSelect={() =>
-                runCommand(() => router.push("/learn/foundations"))
-              }
-            >
-              Foundations
-            </CommandItem>
-            <CommandItem
-              onSelect={() => runCommand(() => router.push("/learn/dashboard"))}
-            >
-              Dashboard App
-            </CommandItem>
-          </CommandGroup>
           <CommandSeparator />
           <CommandGroup heading="Settings">
             <CommandItem
@@ -109,4 +101,3 @@ export function SearchCommand() {
     </>
   );
 }
-

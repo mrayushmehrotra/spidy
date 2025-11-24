@@ -33,7 +33,7 @@ export function SiteHeader() {
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle Menu</span>
+                <span className="sr-only">toggle menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="w-[280px] p-0">
@@ -61,8 +61,8 @@ export function SiteHeader() {
                         cx="90"
                         cy="90"
                         r="87"
-                        fill="black"
-                        stroke="white"
+                        fill="currentColor"
+                        stroke="hsl(var(--background))"
                         strokeWidth="6"
                       />
                       <path
@@ -86,8 +86,8 @@ export function SiteHeader() {
                         y2="160.5"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stopColor="white" />
-                        <stop offset="1" stopColor="white" stopOpacity="0" />
+                        <stop stopColor="hsl(var(--background))" />
+                        <stop offset="1" stopColor="hsl(var(--background))" stopOpacity="0" />
                       </linearGradient>
                       <linearGradient
                         id="paint1_linear_408_134"
@@ -97,12 +97,12 @@ export function SiteHeader() {
                         y2="106.875"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stopColor="white" />
-                        <stop offset="1" stopColor="white" stopOpacity="0" />
+                        <stop stopColor="hsl(var(--background))" />
+                        <stop offset="1" stopColor="hsl(var(--background))" stopOpacity="0" />
                       </linearGradient>
                     </defs>
                   </svg>
-                  <span className="font-bold">Sigma UI</span>
+                  <span className="font-bold">sigma ui</span>
                 </Link>
               </div>
               <div className="border-t">

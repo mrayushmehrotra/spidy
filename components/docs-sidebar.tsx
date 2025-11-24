@@ -18,41 +18,41 @@ interface DocsSidebarProps extends React.HTMLAttributes<HTMLDivElement> {}
 const docsConfig = {
   sidebarNav: [
     {
-      title: "Getting Started",
+      title: "getting started",
       items: [
         {
-          title: "Introduction",
+          title: "introduction",
           href: "/docs/introduction",
         },
         {
-          title: "Installation",
+          title: "installation",
           href: "/docs/installation",
         },
       ],
     },
     {
-      title: "Components",
+      title: "components",
       items: [
         {
-          title: "Button",
+          title: "button",
           href: "/docs/components/button",
         },
         {
-          title: "Mouse",
+          title: "mouse",
           href: "/docs/components/mouse",
         },
         {
-          title: "Flashy Mouse",
+          title: "flashy mouse",
           href: "/docs/components/flashy-mouse",
         },
 
         {
-          title: "Magnetic Element",
+          title: "magnetic element",
           href: "/docs/components/magnetElement",
         },
         {
-          title: "Caching",
-          href: "/docs/app-router/caching",
+          title: "password input",
+          href: "/docs/components/password-input",
         },
       ],
     },

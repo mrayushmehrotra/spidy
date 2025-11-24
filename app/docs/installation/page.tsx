@@ -4,12 +4,12 @@ import { CodeBlock } from "@/components/code-block";
 
 export default function InstallationPage() {
   const toc = [
-    { id: "system-requirements", text: "System Requirements", level: 2 },
-    { id: "automatic-installation", text: "Automatic Installation", level: 2 },
-    { id: "manual-installation", text: "Manual Installation", level: 2 },
+    { id: "system-requirements", text: "system requirements", level: 2 },
+    { id: "automatic-installation", text: "automatic installation", level: 2 },
+    { id: "manual-installation", text: "manual installation", level: 2 },
     {
       id: "running-the-development-server",
-      text: "Running the Development Server",
+      text: "running the development server",
       level: 2,
     },
   ];
@@ -19,10 +19,10 @@ export default function InstallationPage() {
       <div className="max-w-3xl space-y-12">
         <div className="space-y-4">
           <h1 className="scroll-m-20 text-4xl font-bold tracking-tight">
-            Installation
+            installation
           </h1>
           <p className="text-xl text-muted-foreground">
-            Create a new Next.js application or Whatever App you like.
+            create a new next.js application or whatever app you like.
           </p>
         </div>
 
@@ -31,12 +31,12 @@ export default function InstallationPage() {
             className="scroll-m-20 text-2xl font-semibold tracking-tight"
             id="system-requirements"
           >
-            System Requirements
+            system requirements
           </h2>
           <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-            <li>Node.js 18.17 or later</li>
-            <li>Knowledge of Web</li>
-            <li>macOS, Windows (including WSL), or Linux</li>
+            <li>node.js 18.17 or later</li>
+            <li>knowledge of web</li>
+            <li>macos, windows (including wsl), or linux</li>
           </ul>
         </div>
 
@@ -45,10 +45,10 @@ export default function InstallationPage() {
             className="scroll-m-20 text-2xl font-semibold tracking-tight"
             id="automatic-installation"
           >
-            Automatic Installation
+            automatic installation
           </h2>
           <p className="leading-7">
-            We recommend creating a new Next.js app using{" "}
+            we recommend creating a new next.js app using{" "}
             <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">
               create-next-app
             </code>
@@ -58,21 +58,21 @@ export default function InstallationPage() {
             npx create-next-app@latest my-app cd my-app
           </CodeBlock>
           <p className="leading-7">
-            During installation, you'll see prompts to select:
+            during installation, you'll see prompts to select:
           </p>
           <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-            <li>TypeScript or JavaScript</li>
-            <li>ESLint configuration</li>
-            <li>Tailwind CSS configuration</li>
+            <li>typescript or javascript</li>
+            <li>eslint configuration</li>
+            <li>tailwind css configuration</li>
             <li>
-              The{" "}
+              the{" "}
               <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">
                 src/
               </code>{" "}
               directory
             </li>
-            <li>App Router or Pages Router</li>
-            <li>Customize the default import alias</li>
+            <li>app router or pages router</li>
+            <li>customize the default import alias</li>
           </ul>
         </div>
 
@@ -82,16 +82,16 @@ export default function InstallationPage() {
             className="scroll-m-20 text-2xl font-semibold tracking-tight"
             id="manual-installation"
           >
-            Manual Installation
+            manual installation
           </h2>
           <p className="leading-7">
-            To manually create a new Next.js app, install the required packages:
+            to manually create a new next.js app, install the required packages:
           </p>
           <CodeBlock language="bash">
             npm install next@latest react@latest react-dom@latest
           </CodeBlock>
           <p className="leading-7">
-            Then, open your{" "}
+            then, open your{" "}
             <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">
               package.json
             </code>{" "}
@@ -125,7 +125,7 @@ export default function InstallationPage() {
 `}
           </CodeBlock>
           <p className="leading-7">
-            configure your shadcn, and Yeah you are done :)
+            configure your shadcn, and yeah you are done :)
           </p>
         </div>
 
@@ -134,19 +134,19 @@ export default function InstallationPage() {
             className="scroll-m-20 text-2xl font-semibold tracking-tight"
             id="running-the-development-server"
           >
-            Running the Development Server
+            running the development server
           </h2>
           <p className="leading-7">
-            After installation, run the development server:
+            after installation, run the development server:
           </p>
           <CodeBlock language="bash">npm run dev</CodeBlock>
           <p className="leading-7">
-            Now you can visit{" "}
+            now you can visit{" "}
             <a href="http://localhost:3000" className="text-primary underline">
               http://localhost:3000
             </a>{" "}
-            to view your application. By default, the development server will
-            run on port 3000. If that port is used, the next available port will
+            to view your application. by default, the development server will
+            run on port 3000. if that port is used, the next available port will
             be used automatically.
           </p>
         </div>
@@ -154,3 +154,4 @@ export default function InstallationPage() {
     </DocLayout>
   );
 }
+

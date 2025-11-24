@@ -52,8 +52,8 @@ export function Hero() {
                   cx="90"
                   cy="90"
                   r="87"
-                  fill="black"
-                  stroke="white"
+                fill="currentColor"
+                  stroke="hsl(var(--background))"
                   strokeWidth="6"
                 />
                 <path
@@ -77,8 +77,8 @@ export function Hero() {
                   y2="160.5"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="white" />
-                  <stop offset="1" stopColor="white" stopOpacity="0" />
+                  <stop stopColor="hsl(var(--background))" />
+                  <stop offset="1" stopColor="hsl(var(--background))" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint1_linear_408_134"
@@ -88,17 +88,17 @@ export function Hero() {
                   y2="106.875"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="white" />
-                  <stop offset="1" stopColor="white" stopOpacity="0" />
+                  <stop stopColor="hsl(var(--background))" />
+                  <stop offset="1" stopColor="hsl(var(--background))" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
-            Sigma for Next, and many more
+            sigma for next, and many more
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            A Component Library build on top of shadcn
+            a component library build on top of shadcn
           </p>
           <Link
             onClick={() => navigator.clipboard.writeText("")}
@@ -115,13 +115,13 @@ export function Hero() {
             <div className="flex items-center justify-center gap-x-6">
               <Link href="/docs/installation">
                 <Button size="lg" className="gap-1">
-                  Get Started
+                  get started
                   <ChevronRight className="h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/docs">
                 <Button variant="outline" size="lg">
-                  Let&apos;s Build
+                  let&apos;s build
                 </Button>{" "}
               </Link>
             </div>

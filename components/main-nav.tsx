@@ -34,8 +34,8 @@ export function MainNav() {
               cx="90"
               cy="90"
               r="87"
-              fill="black"
-              stroke="white"
+              fill="currentColor"
+              stroke="hsl(var(--background))"
               strokeWidth="6"
             />
             <path
@@ -59,8 +59,8 @@ export function MainNav() {
               y2="160.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="white" />
-              <stop offset="1" stopColor="white" stopOpacity="0" />
+              <stop stopColor="hsl(var(--background))" />
+              <stop offset="1" stopColor="hsl(var(--background))" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_408_134"
@@ -70,16 +70,16 @@ export function MainNav() {
               y2="106.875"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="white" />
-              <stop offset="1" stopColor="white" stopOpacity="0" />
+              <stop stopColor="hsl(var(--background))" />
+              <stop offset="1" stopColor="hsl(var(--background))" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
-        <span className="hidden font-bold sm:inline-block">Sigma UI</span>
+        <span className="hidden font-bold sm:inline-block"> spidy-ui</span>
       </Link>
       <nav className="flex items-center space-x-6 text-sm font-medium">
         <Link
-          href="/docs"
+          href="/docs/installation"
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname?.startsWith("/docs")
@@ -87,7 +87,7 @@ export function MainNav() {
               : "text-foreground/60",
           )}
         >
-          Docs
+          installation
         </Link>
       </nav>
     </div>
