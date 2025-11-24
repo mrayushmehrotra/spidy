@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/site-header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://spidy-blond.vercel.app"),
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -24,8 +25,8 @@ export const metadata: Metadata = {
     "Next.js",
     "NextUI",
     "Tailwind CSS",
-    "Sigma",
-    "Sigma UI",
+    "Spidy",
+    "Spidy UI",
     "React Aria",
     "Server Components",
     "React Components",
@@ -45,8 +46,8 @@ export const metadata: Metadata = {
   openGraph: siteConfig.openGraph,
   authors: [
     {
-      name: "spidy",
-      url: "https://x.com/spidy",
+      name: "spidy ui",
+      url: "https://x.com/spidy_ui",
     },
   ],
   creator: "spidyui-inc",

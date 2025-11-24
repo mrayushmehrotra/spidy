@@ -17,7 +17,7 @@ export default function IntroductionPage() {
             introduction
           </h1>
           <p className="text-md text-muted-foreground">
-            sigma ui is a modern component library built as a superset of shadcn/ui, featuring beautifully-designed, accessible components with a revolutionary code distribution approach. compatible with your favorite frameworks and ai models. fully open source.
+            spidy ui is a modern component library built as a superset of shadcn/ui, featuring beautifully-designed, accessible components with a revolutionary code distribution approach. compatible with your favorite frameworks and ai models. fully open source.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export default function IntroductionPage() {
             </b>
             <br />
             <br />
-            sigma ui solves these challenges with a revolutionary approach built on three core principles:
+            spidy ui solves these challenges with a revolutionary approach built on three core principles:
             <ul className="m-2 list-disc ">
               <li className="mb-2">
                 <b>open code architecture: </b>complete access to component source code for unlimited customization

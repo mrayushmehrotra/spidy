@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Left Section */}
         <div>
           <div className="flex items-center gap-2 text-foreground text-2xl font-extrabold">
-            spidy-ui
+            spidy ui
           </div>
           <p className="text-sm mt-2">
             a product by{" "}
@@ -41,7 +41,7 @@ const Footer = () => {
             <p className="hover:text-foreground cursor-pointer">playground</p>
           </div>
           <div className="space-y-2">
-            <p className="hover:text-foreground cursor-pointer">sigma pro</p>
+            <p className="hover:text-foreground cursor-pointer">spidy pro</p>
             <p className="hover:text-foreground cursor-pointer">aceternity</p>
           </div>
           <div className="space-y-2">

@@ -120,7 +120,7 @@ focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 foc
           Integration with Shadcn UI
         </h1>
         <CodeBlock language="bash">
-          npx shadcn@latest add https://sigma-ui-mu.vercel.app/r/magnetic_div
+          npx shadcn@latest add https://spidy-blond.vercel.app/r/magnetic_div
         </CodeBlock>
         <span className="text-gray-500">
           Customizable navbar component built with{" "}

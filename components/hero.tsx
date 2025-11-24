@@ -33,7 +33,7 @@ export function Hero() {
             <Image src="/favicon.png" height={80} width={90} alt="logo" />
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
-            sigma for next, and many more
+            spidy ui for next, and many more
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
             a component library build on top of shadcn

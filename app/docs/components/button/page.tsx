@@ -118,7 +118,7 @@ return(
           Want Something Like Shadcn Type?
         </h1>
         <CodeBlock>
-          npx shadcn@latest add https://sigma-ui-mu.vercel.app/r/button
+          npx shadcn@latest add https://spidy-blond.vercel.app/r/button
         </CodeBlock>
         <span className="text-gray-500">
           this is just a{" "}

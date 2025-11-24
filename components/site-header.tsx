@@ -56,7 +56,7 @@ export function SiteHeader() {
           <SearchCommand />
           <ThemeToggle />
           <Link
-            href="https://github.com/mrayushmehrotra/sigma-ui"
+            href="https://github.com/mrayushmehrotra/spidy-ui"
             target="_blank"
             rel="noreferrer"
           >
