@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Typer } from "./Typer";
+import { PixelatedLeft } from "./hero-background";
 
 const features = [
   {
@@ -65,10 +66,10 @@ export function Features() {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="border bg-background shadow-sm transition-all hover:shadow-md"
+                className="border bg-background font-sans shadow-sm transition-all hover:shadow-md"
               >
                 <CardHeader className="space-y-1">
-                  <div className="mb-2 rounded-lg bg-primary/10 inline-flex p-2 text-primary">
+                  <div className="mb-2 rounded-lg    inline-flex p-2 text-primary">
                     {feature.icon}
                   </div>
                   <CardTitle>{feature.title}</CardTitle>

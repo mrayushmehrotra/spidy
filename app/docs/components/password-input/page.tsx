@@ -2,6 +2,7 @@
 import { DocLayout } from "@/components/doc-layout";
 import { CodeBlock } from "@/components/code-block";
 import { PasswordInput } from "@/components/ui/password-input";
+import Link from "next/link";
 
 export default function PasswordInputPage() {
   const toc = [
@@ -17,12 +18,16 @@ export default function PasswordInputPage() {
             password input
           </h1>
           <p className="text-md text-muted-foreground">
-            a password input field with toggle visibility functionality using eye icon.
+            a password input field with toggle visibility functionality using
+            eye icon.
           </p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="scroll-m-20 text-xl font-semibold tracking-tight" id="usage">
+          <h2
+            className="scroll-m-20 text-xl font-semibold tracking-tight"
+            id="usage"
+          >
             usage
           </h2>
           <div className="space-y-4">
@@ -30,7 +35,7 @@ export default function PasswordInputPage() {
               <PasswordInput placeholder="enter your password" />
             </div>
             <CodeBlock language="tsx">
-{`import { PasswordInput } from "@/components/ui/password-input";
+              {`import { PasswordInput } from "@/components/ui/password-input";
 
 export function PasswordInputDemo() {
   return <PasswordInput placeholder="enter your password" />;
@@ -39,8 +44,20 @@ export function PasswordInputDemo() {
           </div>
         </div>
 
+        <div className="lg:mt-8 md:mt-4 sm:mt-2">
+          <h1 className="text-2xl font-bold tracking-tight">
+            Integration with Shadcn UI
+          </h1>
+          <CodeBlock language="bash">
+            npx shadcn@latest add
+            https://sigma-ui-mu.vercel.app/r/password-input
+          </CodeBlock>
+        </div>
         <div className="space-y-4">
-          <h2 className="scroll-m-20 text-xl font-semibold tracking-tight" id="examples">
+          <h2
+            className="scroll-m-20 text-xl font-semibold tracking-tight"
+            id="examples"
+          >
             examples
           </h2>
           <div className="space-y-6">
@@ -51,7 +68,7 @@ export function PasswordInputDemo() {
                 <PasswordInput placeholder="enter password" />
               </div>
               <CodeBlock language="tsx">
-{`<div className="space-y-2">
+                {`<div className="space-y-2">
   <label className="text-sm font-medium">password</label>
   <PasswordInput placeholder="enter password" />
 </div>`}
@@ -64,7 +81,7 @@ export function PasswordInputDemo() {
                 <PasswordInput placeholder="disabled password" disabled />
               </div>
               <CodeBlock language="tsx">
-{`<PasswordInput placeholder="disabled password" disabled />`}
+                {`<PasswordInput placeholder="disabled password" disabled />`}
               </CodeBlock>
             </div>
           </div>
@@ -73,3 +90,4 @@ export function PasswordInputDemo() {
     </DocLayout>
   );
 }
+

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 
 import Link from "next/link";
 import Image from "next/image";
+import { PixelatedBackground } from "@/components/hero-background";
 
 export default function Home() {
   return (
@@ -12,6 +13,13 @@ export default function Home() {
       <Features />
 
       <section className="py-24 sm:py-32 bg-muted/50">
+        <PixelatedBackground
+          className="z-1 absolute left-1/2 top-[-40px] h-auto w-screen min-w-[1920px] -translate-x-1/2 object-cover"
+          style={{
+            mixBlendMode: "screen",
+            maskImage: "linear-gradient(to bottom, black, transparent)",
+          }}
+        />
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
             <div className="mx-auto max-w-2xl lg:mx-0">
@@ -30,9 +38,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none font-sans">
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <div className="rounded-2xl shadow-lg border p-6 bg-background shadow-sm">
+                <div className="rounded-2xl shadow-lg border p-6 bg-background ">
                   <h3 className="text-lg font-semibold">foundations</h3>
                   <p className="mt-2 text-muted-foreground">
                     our prime goal is to create basic components which can be

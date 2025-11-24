@@ -36,25 +36,25 @@ export const metadata: Metadata = {
     "UI Design System",
   ],
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   manifest: "/manifest.json",
   twitter: siteConfig.twitter,
   openGraph: siteConfig.openGraph,
   authors: [
     {
-      name: "sigma",
-      url: "https://x.com/sigma_ui",
+      name: "spidy",
+      url: "https://x.com/spidy",
     },
   ],
-  creator: "sigmaui-inc",
+  creator: "spidyui-inc",
   alternates: {
-    canonical: "https://sigma.com",
+    canonical: "https://spidy-blond.vercel.app/",
     types: {
       "application/rss+xml": [
-        { url: "https://sigma.com/feed.xml", title: "RSS Feed" },
+        { url: "https://spidy-blond.vercel.app/feed.xml", title: "RSS Feed" },
       ],
     },
   },
@@ -67,6 +67,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </head>
       <body className={`${GeistMono.className} font-mono`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="relative flex min-h-screen flex-col">
