@@ -54,6 +54,10 @@ const docsConfig = {
           title: "password input",
           href: "/docs/components/password-input",
         },
+        {
+          title: "multi select dropdown",
+          href: "/docs/components/multi-select-dropdown",
+        },
       ],
     },
   ],
